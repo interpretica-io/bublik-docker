@@ -37,6 +37,7 @@ BUBLIK_WEB_STATIC = os.getenv('BUBLIK_WEB_STATIC', '')
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = os.getenv('DEBUG', '0') in ('1', 'true', 'yes')
+SITE_NAME = os.getenv("SITE_NAME", "") or None
 
 ALLOWED_HOSTS = ['*']
 
